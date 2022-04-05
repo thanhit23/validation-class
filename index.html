@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Ký</title>
+  <link rel="icon"
+        href="https://global-uploads.webflow.com/61f25bf46b3218708480f622/61f2c8f71d6cf40ebd906b37_Logo.svg"
+        type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-5">
+                <ul id="nav">
+                    <li><a href="javascrip:void(0)">Trang Chủ</a></li>
+                    <li><a href="javascrip:void(0)">Nội Dung</a></li>
+                    <li><a href="javascrip:void(0)">Mua Hàng</a></li>
+                    <li><a href="javascrip:void(0)">Đăng Ký</a></li>
+                </ul>
+            </div>
+            <div class="offset-md-6"></div>
+            <div class="col-md-1 search-btn-container">
+                <div class="search-icon-wrapper">
+                    <i class="fa-solid fa-xmark search-icon-close active" id="close-search"></i>
+                    <!-- <i class="fa-solid fa-magnifying-glass search-icon" id="open-search"></i>
+                    <div class="searchbar-wrapper active">
+                        <div class="searchbar_main">
+                            <form action="" class="searchbar-input">
+                                <input type="text" placeholder="NFT">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </form>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="container-main">
+    <div class="container-main-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" style="display: flex;justify-content: center;">
+            <form  method="get" class="form" id="form-1">
+              <h3 class="heading">Đăng Ký</h3>
+              <div class="form-group">
+                <label for="fullname" class="form-label">Họ Và Tên<span class="required">*</span></label>
+                <input id="fullname" name="fullname" type="text" placeholder="VD: Nguyễn Duy Thành" class="form-register form-control">
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email<span class="required">*</span></label>
+                <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-register form-control">
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="fullname" class="form-label">Giới Tính<span class="required">*</span></label>
+                <div class="wrapper-form-gender">
+                  <input id="male_gender" name="gender" type="radio" class="form-control form-register" value="1">
+                  <label for="male_gender" class="form-label form-gender">Nam</label>
+                  <input id="female_gender" name="gender" type="radio" class="form-control form-register" value="2">
+                  <label for="female_gender" class="form-label form-gender">Nữ</label>
+                </div>
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="hobby" class="form-label">Sở Thích<span class="required">*</span></label>
+                <div class="wrapper-form-hobby">
+                  <input id="read_book" name="hobby" type="checkbox" class="form-control form-register" value="1">
+                  <label for="read_book" class="form-label form-gender">Đọc Sách</label>
+                  <input id="tourismr" name="hobby" type="checkbox" class="form-control form-register" value="2">
+                  <label for="tourismr" class="form-label form-gender">Du lịch</label>
+                  <input id="music" name="hobby" type="checkbox" class="form-control form-register" value="3">
+                  <label for="music" class="form-label form-gender">Âm nhạc</label>
+                  <input id="culinary" name="hobby" type="checkbox" class="form-control form-register" value="4">
+                  <label for="culinary" class="form-label form-gender">Ẩm thực</label>
+                  <input id="other" name="hobby" type="checkbox" class="form-control form-register" value="5">
+                  <label for="other" class="form-label form-gender">Other</label>
+                </div>
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="country" class="form-label">Quốc Tịch<span class="required">*</span></label>
+                <select name="" id="select-country" class="form-control">
+                  <option value="">Chọn Quốc Tịch</option>
+                  <option name="option-country" value="Việt Nam">Việt Nam</option>
+                  <option name="option-country" value="Mỹ">Mỹ</option>
+                  <option name="option-country" value="Hàn Quốc">Hàn Quốc</option>
+                  <option name="option-country" value="Nhật Bản">Nhật Bản</option>
+                  <option name="option-country" value="Phần Lan">Phần Lan</option>
+                  <option name="option-country" value="Tim Em">Tim Em</option>
+                </select>
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="password" class="form-label">Password<span class="required">*</span></label>
+                <input id="password" name="password" placeholder="Nhập password của bạn" type="password" class="form-register form-control">
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="re-enter-password" class="form-label">Re-Password<span class="required">*</span></label>
+                <input id="re-enter-password" name="re-enter-password" placeholder="Nhập lại password của bạn" type="password" class="form-register form-control">
+                <span class="form-message"></span>
+              </div>
+              <button class="form-submit">Đăng ký</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 copyright-wrapper">
+                    <span>COPYRIGHT <a href="javascrip:void(0)">@thanhit203</a> All Right Reserved By Thanhit203.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <Script src="./main.js"></Script>
+  <script src="https://kit.fontawesome.com/5b900cdeed.js" crossorigin="anonymous"></script>
+</body>
+</html>
